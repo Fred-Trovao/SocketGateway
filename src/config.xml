@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<config>
+    <server>
+        <!-- Will be listening this port -->
+        <port>8888</port>
+        <!-- Max connection count: 0 is unlimited -->
+        <maxAcceptedConnection>0</maxAcceptedConnection>
+        <!-- Connection timeout (milliseconds) -->
+        <connectionTimeout>0</connectionTimeout>
+    </server>
+    <clients>
+        <client>
+            <host>1</host>
+            <port>1</port>
+        </client>
+        <client>
+            <host>2</host>
+            <port>2</port>
+        </client>
+    </clients>
+</config>
+
