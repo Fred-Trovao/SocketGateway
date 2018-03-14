@@ -2,20 +2,34 @@
 <config>
     <server>
         <!-- Will be listening this port -->
-        <port>8888</port>
+        <port>6931</port>
         <!-- Max connection count: 0 is unlimited -->
         <maxAcceptedConnection>0</maxAcceptedConnection>
         <!-- Connection timeout (milliseconds) -->
         <connectionTimeout>0</connectionTimeout>
+        <!-- Database parameters -->
+        <dbParams>
+            <dbType>MySQL</dbType> <!-- Database types: Supported: MySQL -->
+            <dbUsername>root</dbUsername>
+            <dbPassword>Tgr@2310473</dbPassword>
+            <dbHost>10.3.2.10</dbHost>
+            <dbPort>3306</dbPort>
+            <dbName>hlr_hss</dbName>
+        </dbParams>
     </server>
     <clients>
+        <!-- First client is main -->
         <client>
-            <host>1</host>
-            <port>1</port>
+            <host>10.40.24.5</host>
+            <port>3300</port>
+            <description>EMA15</description>
+            <welcomeMessage>PROCESS cai3300 CONNECTED...</welcomeMessage>
         </client>
         <client>
-            <host>2</host>
-            <port>2</port>
+            <host>10.7.24.10</host>
+            <port>3300</port>
+            <description>EMA16</description>
+            <welcomeMessage>PROCESS CaiServer1 CONNECTED...</welcomeMessage>
         </client>
     </clients>
 </config>
